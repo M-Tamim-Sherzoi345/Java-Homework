@@ -1,0 +1,11 @@
+public class AreaOfACircle {
+
+    
+    public static void main(String[] args) {
+        int radiuse = 1;
+        double area;
+        area = 3.14159 * radiuse * radiuse;
+        System.out.println("The area of this circle is equale to " area);
+    }
+    
+}

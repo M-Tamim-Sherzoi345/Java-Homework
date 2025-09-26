@@ -1,0 +1,11 @@
+public class OurInformations {
+    public static void main(String[] args) {
+        System.out.println("Name: M Tamim Sherzoi");
+        System.out.println("F/Name: M Ibrahim Sherzoi");
+        System.out.println("Age: 20 years");
+        System.out.println("Phone No: 0703269021");
+        System.out.println("Address: KDR-Aino mina 22 street");
+        
+    }
+    
+}
