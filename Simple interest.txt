@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package simple.interest;
+
+/**
+ *
+ * @author H P
+ */
+public class SimpleInterest {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double principle = 670000;
+        double rate = (10.0/100);
+        double time = 2;
+        double simpleinterest = ((principle * rate * time)/100);
+        System.out.println("Simple interest is equal to " + simpleinterest);
+    }
+    
+}

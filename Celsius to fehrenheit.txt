@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package convert.celsius.to.fehranheit;
+
+/**
+ *
+ * @author H P
+ */
+import java.util.Scanner;
+public class ConvertCelsiusToFehranheit {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("If you want to convert celsius to fahrenheit Please enter a Degree of celsius!");
+        double celsius = input.nextDouble();
+        double fahrenheit = (((9 * celsius)/5)+32);
+        System.out.println("The degree of " + celsius + " celsius which you entered is equal to " + fahrenheit + "degree of fehrenheit.");
+    }
+    
+}

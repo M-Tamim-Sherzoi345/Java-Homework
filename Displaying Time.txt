@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package displaying.time;
+
+/**
+ *
+ * @author H P
+ */
+public class DisplayingTime {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        long total_mili_second = System.currentTimeMillis();
+        long total_second = total_mili_second / 1000;
+        long current_second = total_second%60;
+        long total_minute = total_second / 60;
+        long current_minute = total_minute%60;
+        long total_hour = total_minute / 60;
+        long current_hour = total_hour%24;
+        System.out.println(current_hour + ":" + current_minute + ":" + current_second);
+    }
+    
+}

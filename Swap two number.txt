@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package swap.two.number;
+
+/**
+ *
+ * @author H P
+ */
+public class SwapTwoNumber {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double a = 10;
+        double b = 15;
+        System.out.println("a is equal to " + a);        
+        System.out.println("b is equal to " + b);
+        System.out.println("After procces:");
+        double a1 = a + b;
+        double b1 = a - b;
+        double a2 = a1 - a;
+        double b2 = b1 + 15;
+        System.out.println("a is equal t0 " + a2);
+        System.out.println("b is equal to " + b2);
+    }
+    
+}

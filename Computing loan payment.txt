@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package compute.loan.payments;
+
+/**
+ *
+ * @author H P
+ */
+import java.util.Scanner;
+public class ComputeLoanPayments {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please Enter the loan amount!");
+        double loan_amount = input.nextDouble();
+        System.out.println("Please enter the Monthly interest rate!");
+        double monthly_interest_rate = input.nextDouble();
+        System.out.println("Please enter number of year!");
+        int number_of_year = input.nextInt();
+        double monthly_payment;
+        monthly_payment = (loan_amount * monthly_interest_rate) / (1 - (1 / Math.pow((1 + monthly_interest_rate) , number_of_year *12)));
+        System.out.println("This monthly payment is equal to " + monthly_payment);
+    }
+    
+}

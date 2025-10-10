@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package perimeterofrectangle;
+
+/**
+ *
+ * @author H P
+ */
+public class Perimeterofrectangle {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double lenght = 10;
+        double width = 2.56;
+        double perimeterofrectangle = 0.5 * lenght * width;
+        System.out.println(perimeterofrectangle);
+    }
+    

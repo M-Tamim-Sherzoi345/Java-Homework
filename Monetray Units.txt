@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package monetary.units;
+
+/**
+ *
+ * @author H P
+ */
+import java.util.Scanner;
+public class MonetaryUnits {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter an Amount of Dollars!");
+        double total_dollars = input.nextDouble();
+        double total_cents = total_dollars * 100;
+        double dollar = total_cents / 100;
+        double current_cents = total_cents % 100;
+        double total_quarter = current_cents / 25;
+        double current_quater = total_quarter % 25;
+        System.out.println("Dollar:" + dollar + " Cents:" + current_cents + " Quarter:" + total_quarter);
+        
+        
+    }
+    
+}

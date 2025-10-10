@@ -1,0 +1,37 @@
+
+package chinese.zodiac;
+import java.util.Scanner;
+public class ChineseZodiac {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please Enter a year!");
+        int year = input.nextInt();
+        if (year % 12 == 0){
+            System.out.println("This is monkey yaer!");
+        }else if(year % 12 == 1){
+            System.out.println("This is rooster yaer!");
+        }else if(year % 12 == 2){
+            System.out.println("This is Dog yaer!");
+        }else if(year % 12 == 3){
+            System.out.println("This is Pig yaer!");
+        }else if(year % 12 == 4){
+            System.out.println("This is Rat yaer!");
+        }else if(year % 12 == 5){
+            System.out.println("This is Ox yaer!");
+        }else if(year % 12 == 6){
+            System.out.println("This is tiger yaer!");
+        }else if(year % 12 == 7){
+            System.out.println("This is Rabbit yaer!");
+        }else if(year % 12 == 8){
+            System.out.println("This is dragon yaer!");
+        }else if(year % 12 == 9){
+            System.out.println("This is Snak yaer!");
+        }else if(year % 12 == 10){
+            System.out.println("This is horse yaer!");
+        }else if(year % 12 == 11){
+            System.out.println("This is Sheep yaer!");
+        }
+    }
+    
+}

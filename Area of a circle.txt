@@ -5,7 +5,7 @@ public class AreaOfACircle {
         int radiuse = 1;
         double area;
         area = 3.14159 * radiuse * radiuse;
-        System.out.println("The area of this circle is equale to " area);
+        System.out.println("The area of this circle is equale to " + area);
     }
     
 }

@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package max.of.two.number;
+
+/**
+ *
+ * @author H P
+ */
+import java.util.Scanner;
+public class MaxOfTwoNumber {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Two number, I will teel you which one is max!");
+        System.out.println("Enter Number first!");
+        double num1 = input.nextDouble();
+        System.out.println("Enter number second!");
+        double num2 = input.nextDouble();
+        if(num1 > num2){
+            System.out.println("The first number is max from second number.");
+        } else{
+            System.out.println("The second number is max from first number.");
+        }
+        
+    }
+    
+}

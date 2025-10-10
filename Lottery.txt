@@ -1,0 +1,31 @@
+
+package lottery;
+import java.util.Scanner;
+public class Lottery {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int lottery = (int)(Math.random() * 100);
+        System.out.println("Enter a two digite number!");
+        int gause = input.nextInt();
+        
+        // first we have to divied lottery and gause number to digites!
+        
+        int lottery_digite_1 = lottery / 10;
+        int lottery_digite_2 = lottery % 10;
+        int gause_digite_1 = gause / 10;
+        int gause_digite_2 = gause % 10;
+        
+        if(lottery == gause){
+            System.out.println("You won 10000$ award!");
+        } else if(lottery_digite_1 == gause_digite_1 ^ lottery_digite_2 == gause_digite_1 ^ lottery_digite_1 == gause_digite_2 ^ lottery_digite_2 == gause_digite_2){
+            System.out.println("You won 3000$ award!");
+        } else if(lottery_digite_1 == gause_digite_1 ^ lottery_digite_2 != gause_digite_1 ^ lottery_digite_1 == gause_digite_2 ^ lottery_digite_2 != gause_digite_2){
+            System.out.println("You won 1000$ award!");
+        }else{
+            System.out.println("You won 0.00000000000$ award!");
+        }
+        
+    }
+    
+}

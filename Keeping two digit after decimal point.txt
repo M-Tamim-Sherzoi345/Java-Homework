@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package keeping.two.digites.after.decimal.points;
+
+/**
+ *
+ * @author H P
+ */
+import java.util.Scanner;
+public class KeepingTwoDigitesAfterDecimalPoints {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter product original price!!");
+        double amount = input.nextFloat();
+        System.out.println("Enter sale tax!");
+        double tax = input.nextDouble();
+        double taxAmount = (amount * tax ) / 100;
+        System.out.printf("Product price after sale tax is %.2f" , (amount + taxAmount));
+    }
+    
+}
