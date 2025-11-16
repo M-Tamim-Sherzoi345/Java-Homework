@@ -1,0 +1,31 @@
+
+package hexadigit2dec;
+import java.util.Scanner;
+public class HexaDigit2Dec {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Please enter a hexaDecimal digit!");
+        String hexString = input.nextLine();
+        
+        if(hexString.length() != 1){
+            System.out.println("You must be exactly only one character");
+            System.exit(1);
+        }
+        
+        char character_upperCase = Character.toUpperCase(hexString.charAt(0));
+        if(character_upperCase >= 'A' && character_upperCase >= 'F' ){
+            int value = character_upperCase - 'A' +10;
+            System.out.println("The decimal value for hex digit " + character_upperCase + " is " + value);
+        }
+        else if(Character.isDigit(character_upperCase)){
+            System.out.println("The decimal value for hex digit " + character_upperCase + " is " + character_upperCase);
+        }
+        else{
+            System.out.println(character_upperCase + " is an invalid input!");
+        }
+        
+    }
+    
+}

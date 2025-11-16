@@ -1,0 +1,26 @@
+
+package repeat.addition.until.correct.using.loop;
+import java.util.Scanner;
+public class RepeatAdditionUntilCorrectUsingLoop {
+
+    public static void main(String[] args) {
+      
+        Scanner input = new Scanner(System.in);
+        
+        int num1 = (int)(Math.random() * 10);
+        int num2 = (int)(Math.random() * 10);
+
+        int programResult = num1 + num2;
+        
+        System.out.println("What is n result of " + num1 + " + " + num2 + " = ?");
+        int result = input.nextInt();
+        while(programResult != result){
+            System.out.println(" You are wrong! What is n result of " + num1 + " + " + num2 + " = ?");
+            result = input.nextInt();
+            
+      }
+        
+        System.out.println("You won!");
+    }
+    
+}

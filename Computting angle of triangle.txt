@@ -1,0 +1,38 @@
+
+package conmputting.angles.of.a.triangle;
+import java.util.Scanner;
+public class ConmputtingAnglesOfATriangle {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("If you want to find the angle of triangle please enter bellow values!");
+        System.out.print("X1 = ");
+        int x1 = input.nextInt();
+        System.out.print("Y1 = ");
+        int y1 = input.nextInt();
+        System.out.print("X2 = ");
+        int x2 = input.nextInt();
+        System.out.print("Y2 = ");
+        int y2 = input.nextInt();
+        System.out.print("X3 = ");
+        int x3 = input.nextInt();
+        System.out.print("Y3 = ");
+        int y3 = input.nextInt();
+        
+        
+        double A = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        double B = Math.sqrt(Math.pow((x3 - x2), 2) + Math.pow((y3 - y2), 2));
+        double C = Math.sqrt(Math.pow((x3 - x1), 2) + Math.pow((y3 - y1), 2));
+        
+        double angleA = Math.toDegrees(Math.acos((C * C + B * B - A * A) / (2 * B * C)));
+        double angleB = Math.toDegrees(Math.acos((C * C + A * A - B * B) / (2 * A * C)));
+        double angleC = Math.toDegrees(Math.acos((A * A + B * B - C * C) / (2 * B * A)));
+        
+        
+        System.out.println("Angle A is equal to: " + angleA);
+        System.out.println("Angle B is equal to: " + angleB);
+        System.out.println("Angle C is equal to: " + angleC);
+        
+    }
+    
+}
